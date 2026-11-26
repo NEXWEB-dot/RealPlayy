@@ -1,6 +1,4 @@
-import { velocity } from "three/tsl";
-import { lights } from "three/tsl";
-
+import {FILL_ME  } from './core/fillcheck';
 export const CONFIG={
     renderer:{
         maxPixelRatio:1.5, 
@@ -23,7 +21,7 @@ export const CONFIG={
     },
     //Dimensions
     table: { 
-        length:2.4,
+        length:2.74,
         width:1.525,
         height:0.76,
         thickness:0.05
@@ -38,6 +36,8 @@ export const CONFIG={
     arena:{
          floorWidth:15,
     floorDepth:12,
+    barrierHeight:4,
+    barrierThickness:0.2,
     },
     lights:{
         skyColor:0xffffff,
@@ -49,17 +49,17 @@ export const CONFIG={
     // M2 Section
     // Physics
     physics:{
-        step:5,
+        step:0.0084,
         gravity:9.81,
     },
     //ball
     ball:{
-        radius:6,
-        mass:2,
-        restitution:3,
-        floorRestitution:4,
-        dragCoeff:2,
-        airdensity:4,
+        radius:0.02,
+        mass:0.0027,
+        restitution:0.09,
+        floorRestitution:0.5,
+        dragCoeff:0.4,
+        airdensity:1.2,
         color:0xffffff,
     },
     machine:{

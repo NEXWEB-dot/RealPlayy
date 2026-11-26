@@ -24,8 +24,7 @@ const camera=new THREE.PerspectiveCamera(
 camera.position.set(0,CONFIG.camera.height,CONFIG.player.startZ+CONFIG.camera.distance);
 camera.lookAt(0,CONFIG.camera.lookAtHeight,CONFIG.camera.lookAtZ);
 scene.add(createArena());
-scene.add(createPlayer());
-const hemi= new THREE.HemisphereLight(0xffffff,0x556677,1.2);
+const hemi= new THREE.HemisphereLight(CONFIG.lights,skyColor,CONFIG.lights.groundColor,CONFIG.lights.hemiStrenght);
 scene.add(hemi);
 const sun=new THREE.DirectionalLight(0xffffff,1.6);
 sun.position.set(4,8,3);
