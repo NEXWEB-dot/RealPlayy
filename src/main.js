@@ -5,6 +5,7 @@ import {findblanks  } from './core/fillcheck.js';
 import {  createRenderer} from './core/renderer.js';
 import {createLoop  } from './core/loop.js';
 import {createArena  } from './sports/tableTennis/arena.js';
+import {createBall  } from './sports/ball.js';
 const blanks=findblanks(CONFIG);
 if(blanks.length >0){
     document.body.innerHTML=`<pre style="color#fff;padding:16px;font:16px monospace">Fill in these valus in src/config.js:\n\n${blanks.join('\n')}</pre>;`
