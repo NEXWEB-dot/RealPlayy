@@ -1,3 +1,4 @@
+import { velocity } from "three/tsl";
 import { lights } from "three/tsl";
 
 export const CONFIG={
@@ -44,6 +45,26 @@ export const CONFIG={
         hemiStrenght:1.2,
         sunColor:0xffffff,
         sunStrenght:1.6,
+    },
+    // M2 Section
+    // Physics
+    physics:{
+        step:5,
+        gravity:9.81,
+    },
+    //ball
+    ball:{
+        radius:6,
+        mass:2,
+        restitution:3,
+        floorRestitution:4,
+        dragCoeff:2,
+        airdensity:4,
+        color:0xffffff,
+    },
+    machine:{
+        start:{x:5,y:4,z:2},
+        velocity:{x:4,y:4,z:3}
     },
     colors:{
         floor:0xe8604c,
